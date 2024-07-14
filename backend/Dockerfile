@@ -15,7 +15,7 @@ WORKDIR /app
 # Install the project's NPM dependencies.
 COPY package.json /app/
 RUN npm --silent install
-RUN npm install mysql2 --save
+RUN npm install pg --save
 RUN mkdir /deps && mv node_modules /deps/node_modules
 
 # Set environment variables to point to the installed NPM modules.

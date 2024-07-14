@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "mysql": "2.18.1",
+    "postgres": "3.3.5",
     "sequelize": "6.32.0"
   }
 }
