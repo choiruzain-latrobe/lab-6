@@ -23,7 +23,7 @@ const Article = db.define('articles', {
 // Currently the then function is commented out. This does not work properly,
 // and you will get an error message. Uncomment the then function here and the
 // at end of the program (the closing braces) and see what happens.
-db.sync({ force: true })//.then(() => {
+db.sync({ force: true }).then(() => {
 
   // When creating a record the id attribute is automatically generated and put into the database.
   Article.create({
@@ -51,7 +51,7 @@ db.sync({ force: true })//.then(() => {
     content: 'How a car changed his life forever.'
   });
 
-//});
+});
 
 // NOTE: To keep this particular example simple, we don't close the database
 // connection before exiting. See populate_data2.js for an example which
